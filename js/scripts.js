@@ -18,4 +18,30 @@ $(document).ready(function(){
             }
         }
     });
+
+    $( function() {
+        $( "#dialog" ).dialog({
+            minWidth: 400,
+            position: {
+                my: "left top",
+                at: "left bottom",
+                of: "#opener"
+            },
+            modal: true,
+            autoOpen: false,
+            show: {
+                effect: "blind",
+                duration: 1000
+            },
+            hide: {
+                effect: "explode",
+                duration: 1000
+            }
+        });
+
+        $( "#opener" ).on( "click", function() {
+            $( "#dialog" ).dialog( "open" );
+        });
+    } );
+
 });

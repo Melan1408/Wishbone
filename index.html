@@ -11,14 +11,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://resources/demos/style.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+<div id="dialog" title="Enter your data for sending">
+    <form action="#" method="post" class="form">
+        <input type="tel" placeholder="Phone number" name="phone_number" class="input" required>
+        <input type="email" placeholder="Email" name="email" class="input" required>
+        <button type="submit"><p>Send template</p></button>
+    </form>
+</div>
 <header>
     <div class="menuContainer">
         <a href="#" class="linkLogo">
-            <img src="images/logo.svg" alt="logo;">
+            <img src="images/logoBig.svg" alt="logo;">
         </a>
         <nav>
             <ul>
@@ -37,7 +45,7 @@
                 <li class="listMenuButton">
                     <a href="#" class="linkMenuButton">Contact</a>
                 </li>
-                <li class="listMenuBigButton">
+                <li class="listMenuBigButton" id="opener">
                     <a href="#" class="linkMenuBigButton">Get template</a>
                 </li>
             </ul>
@@ -134,11 +142,13 @@
         </ul>
     </div>
 </footer>
+
 <script src="https://kit.fontawesome.com/47aeb9915c.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous"></script>
 <script src="js/owl.carousel.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>
